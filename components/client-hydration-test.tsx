@@ -10,6 +10,7 @@ export function ClientHydrationTest() {
   const [error, setError] = useState("ninguno");
 
   useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     setUa(navigator.userAgent);
 
